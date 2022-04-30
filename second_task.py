@@ -43,7 +43,3 @@ def open_write_files(folder_name, *files):
     for file in list(files):
         open(file, "w").close()
     yield
-
-
-with OpenWriteFiles("Dersd", 'hello world.py'):
-    pass
